@@ -35,7 +35,7 @@ const ExploreOffsPanel = () => {
             <div className='w-full min-h-[200px] bg-inherit flex justify-start items-start overflow-x-auto laptop:overflow-x-visible container productsContent' ref={myRef}>
                 {ofertas.map((fOff, index)=>{
                     return (
-                        <OffsCard fOff={fOff} />
+                        <OffsCard fOff={fOff} key={index} />
                     )
                 })}
             </div>

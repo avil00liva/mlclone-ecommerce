@@ -132,9 +132,9 @@ const NavbarExplore = () => {
         {menuOpen && 
             <div className='z-[200] w-full quini:w-[400px] min-h-screen absolute right-0 top-14 bg-yellow-300'>
                 <ul className='flex flex-col justify-between items-start'>
-                    {menuList.map((item)=>{
+                    {menuList.map((item, index)=>{
                         return (
-                            <Link to={`/market/${item.address}`} className='w-full h-full'>
+                            <Link to={`/market/${item.address}`} className='w-full h-full' key={index}>
                                 <li className='p-4 text-lg cursor-pointer text-gray-800 hover:text-black border-b border-b-gray-800 w-full transition-colors duration-300'>
                                     {item.itemList}
                                 </li>
@@ -156,17 +156,17 @@ const NavbarExplore = () => {
                 </span>
             </div>
             <ul className='flex justify-between items-center flex-[0.9] relative'>
-                {menuList.map((item)=>{
+                {menuList.map((item, index)=>{
                     return (
                         <>
                         {item.address ?
-                        <Link to={`/market/${item.address}`} className='w-full h-full'>
+                        <Link to={`/market/${item.address}`} className='w-full h-full' key={index}>
                             <li className='ml-2 text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300'>
                                 {item.itemList}
                             </li>
                         </Link>
                         :
-                        <li className='relative ml-2 w-full h-full text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300'>
+                        <li className='relative ml-2 w-full h-full text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300' key={index}>
                         {item.itemList}
                         </li>
                         }
@@ -192,9 +192,9 @@ const NavbarExplore = () => {
                 })}
             </ul>
             <ul className='flex justify-between items-center px-2'>
-                {menuUser.map((item)=>{
+                {menuUser.map((item, index)=>{
                     return (
-                        <li className='ml-2 text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300'>
+                        <li className='ml-2 text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300' key={index}>
                             {item.itemList}
                         </li>
                     )

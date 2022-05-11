@@ -22,7 +22,7 @@ const RecommendedProductsMarket = ({productFilter, param}) => {
   return (
     <>
         {recoFilter.length > 0 && <div className='mt-8 w-full min-h-[100px] h-fit bg-inherit px-4 '>
-            <h1 className='text-xl font-normal mb-8'>Publicaciones del vendedor</h1>
+            <h1 className='text-xl font-normal mb-8'>Publicaciones relacionadas</h1>
             <div className='productCarrousel'>
                 <div id='container' className='container productsContent tablet:px-16' ref={myRef}>
                     {recoFilter.map((item, index)=>{

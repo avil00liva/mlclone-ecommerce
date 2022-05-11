@@ -1066,6 +1066,190 @@ const fakeMock=[
         general_type:"bicicleta",
         categorie: "Transporte"
     },
+    {
+        id:34,
+        name: "Alimento Pedigree Óptima Digestión Etapa 2 para perro adulto todos los tamaños sabor carne, pollo y cereales en bolsa de 21 kg",
+        price: 4.335,
+        off:"15",
+        cout:"12x 614",
+        oferta:true,
+        full:false,
+        free: false,
+        img:"https://http2.mlstatic.com/D_NQ_NP_831071-MLA49900705686_052022-O.webp",
+        caracteristicas_value:[
+            {
+                caract:"Mascota recomendada", 
+                value:'Perro'
+            },
+            {
+                caract:"Tamaño de la raza", 
+                value:'Todos los tamaños'
+            },
+            {
+                caract:"Sabor",
+                value:"Carne/Pollo/Cereales"
+            },
+            {
+                caract:"Etapa de vida de la mascota", 
+                value:"Adulto"
+            },
+            {
+                caract:"Tipo de comida", 
+                value:"Seca"
+            },
+        ],
+        type:"mascotas",
+        general_type:"comida",
+        categorie: "supermercado"
+    },
+    {
+        id:35,
+        name: "Vino (combo Premiun Caja 6 Botellas X 750) Rutini 1. Quirino",
+        price: 5.114,
+        off:"32",
+        cout:"12x 725",
+        oferta:true,
+        full:false,
+        free: true,
+        img:"https://http2.mlstatic.com/D_NQ_NP_747253-MLA49599236268_042022-O.webp",
+        caracteristicas_value:[
+            {
+                caract:"Bodega", 
+                value:'Rutini / Finca / Bianchi / Cafayate / Reserva de Los Andes'
+            },
+            {
+                caract:"Marca", 
+                value:'Rutini / Finca / Bianchi / Cafayate / Reserva de Los Andes'
+            },
+            {
+                caract:"Línea",
+                value:"Rutini / Finca / Bianchi / Cafayate / Reserva de Los Andes"
+            },
+            {
+                caract:"Año", 
+                value:"2019"
+            },
+            {
+                caract:"Varietal", 
+                value:"Malbec/Cabernet"
+            },
+            {
+                caract:"Volumen de la unidad", 
+                value:"750 mL"
+            },
+        ],
+        type:"bebida",
+        general_type:"comida",
+        categorie: "supermercado"
+    },
+    {
+        id:36,
+        name: "Pañales Pampers Premium Care  XXG 54 u",
+        price: 2.238,
+        off:"22",
+        cout:"12x 317",
+        oferta:false,
+        full:true,
+        free: false,
+        img:"https://http2.mlstatic.com/D_NQ_NP_775661-MLA43776889595_102020-O.webp",
+        caracteristicas_value:[
+            {
+                caract:"Marca", 
+                value:'Pampers'
+            },
+            {
+                caract:"Línea",
+                value:"Premium Care"
+            },
+            {
+                caract:"Tamaño", 
+                value:"XXG"
+            },
+            {
+                caract:"Unidades por envase", 
+                value:"54"
+            },
+        ],
+        type:"higiene",
+        general_type:"higiene",
+        categorie: "supermercado"
+    },
+    {
+        id:37,
+        name: "16 Capsulas Cortado Espresso Dolce Gusto Nescafe Capsuland",
+        price: 819,
+        off:"37",
+        cout:"12x 159",
+        oferta:false,
+        full:false,
+        free: false,
+        img:"https://http2.mlstatic.com/D_NQ_NP_606485-MLA47186185871_082021-O.webp",
+        caracteristicas_value:[
+            {
+                caract:"Marca", 
+                value:'Nescafé Dolce Gusto'
+            },
+            {
+                caract:"Línea",
+                value:"Dolce Gusto"
+            },
+            {
+                caract:"Variedad de la infusión", 
+                value:"Cortado"
+            },
+            {
+                caract:"Unidades por envase", 
+                value:"16"
+            },
+            {
+                caract:"Unidades por pack", 
+                value:"1"
+            },
+        ],
+        type:"bebida",
+        general_type:"comida",
+        categorie: "supermercado"
+    },
+    {
+        id:38,
+        name: "Combo Vinos Tintos Premium Dv Catena Escorihuela Desquiciado",
+        price: 4711,
+        off:"25",
+        cout:"12x 668",
+        oferta:false,
+        full:false,
+        free: true,
+        img:"https://http2.mlstatic.com/D_NQ_NP_877059-MLA49875759652_052022-O.webp",
+        caracteristicas_value:[
+            {
+                caract:"Bodega", 
+                value:'Escorihuela Gascón | Catena Zapata | Desquiciado Wines | Pascual Toso | El Esteco | Norton'
+            },
+            {
+                caract:"Marca",
+                value:"Escorihuela Gascón | D.V. Catena | Desquiciado | Pascual Toso | Elementos | Elegido"
+            },
+            {
+                caract:"Línea", 
+                value:"Escorihuela Gascón Organic"
+            },
+            {
+                caract:"Variedad", 
+                value:"Tinto"
+            },
+            {
+                caract:"Varietal", 
+                value:"Malbec | Cabernet Sauvignon | Cabernet Franc | Cabernet Malbec"
+            },
+            {
+                caract:"Volumen de la unidad", 
+                value:"750mL"
+            },
+        ],
+        type:"bebida",
+        general_type:"comida",
+        categorie: "supermercado"
+    },
 
 ]
 

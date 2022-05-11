@@ -89,7 +89,7 @@ const MarketCategories = () => {
                 <section className='w-full min-h-screen bg-white shadow-sm'>
                   {pSearched && pSearched.map((item, index)=>{
                     return (
-                      <div className='w-full min-h-[200px] laptop:max-h-[200px] bg-inherit border-b border-b-gray-400 px-6 py-4 flex flex-col laptop:flex-row items-start justify-start relative mb-4'>
+                      <div className='w-full min-h-[200px] laptop:max-h-[200px] bg-inherit border-b border-b-gray-400 px-6 py-4 flex flex-col laptop:flex-row items-start justify-start relative mb-4' key={index}>
                         <div className='w-[250px] h-[150px] bg-inherit mr-2'>
                           <img src={item.img} alt="Product preview" className='w-full h-full object-contain' />
                         </div>
