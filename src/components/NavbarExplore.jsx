@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { BsGeoAlt, BsBell, BsCart2, BsSearch } from "react-icons/bs"
 import { FaRegUserCircle, FaBars } from "react-icons/fa"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { usePosts } from '../context/PostsContext'
 import NotifiBox from './NotifiBox'
+import RespMenu from './RespMenu'
 
 
 const NavbarExplore = () => {
@@ -15,7 +16,7 @@ const NavbarExplore = () => {
     const [menuCategories, setMenuCategories]=useState(false)
     const [categories, setCategories] = useState(mockProducts)
     const [listaItemsCat, setListaItemCat] = useState([])
-
+    const navigate = useNavigate()
     
     
     useEffect(()=>{
@@ -36,6 +37,16 @@ const NavbarExplore = () => {
         setFilterMockProducts(newFilter)
       }
     }
+
+    const handleKeyPress = (e) => {
+        if(e.key === 'Enter'){
+          console.log('You must have pressed Enter ')
+          setSelectedWord("")
+          setFilterMockProducts([])
+          return (
+              navigate(`/market/productos/${selectedWord.toLowerCase()}`))
+        }
+      }
 
     const showNoti=()=>{
         setNotifi(!notifi)
@@ -108,7 +119,7 @@ const NavbarExplore = () => {
                 </div>
             </Link>
             <div className='h-fit flex-grow mx-4 relative overflow-hidden flex items-center'>
-                <input type="text" placeholder='Buscar productos, marcas y más...' className='w-full rounded-md placeholder:text-gray-300 outline-none border-0 py-2 px-4 text-base flex-grow ' value={selectedWord} onChange={handleFilter} />
+                <input type="text" placeholder='Buscar productos, marcas y más...' className='w-full rounded-md placeholder:text-gray-300 outline-none border-0 py-2 px-4 text-base flex-grow ' value={selectedWord} onChange={handleFilter} onKeyPress={handleKeyPress} />
                 <div className='bg-transparent cursor-pointer flex items-center justify-center w-10 absolute top-0 h-full right-1'>
                     <Link to={`/market/productos/${selectedWord.toLowerCase()}`} onClick={()=> setFilterMockProducts([])}>
                         <BsSearch className='w-5 h-5' />
@@ -130,19 +141,8 @@ const NavbarExplore = () => {
             </div>
         </div>
         {menuOpen && 
-            <div className='z-[200] w-full quini:w-[400px] min-h-screen absolute right-0 top-14 bg-yellow-300'>
-                <ul className='flex flex-col justify-between items-start'>
-                    {menuList.map((item, index)=>{
-                        return (
-                            <Link to={`/market/${item.address}`} className='w-full h-full' key={index}>
-                                <li className='p-4 text-lg cursor-pointer text-gray-800 hover:text-black border-b border-b-gray-800 w-full transition-colors duration-300'>
-                                    {item.itemList}
-                                </li>
-                            </Link>
-                        )
-                    })}
-                </ul>
-            </div>
+            <RespMenu setMenuOpen={setMenuOpen} menuList={menuList} listaItemsCat={listaItemsCat} menuCategories={menuCategories}
+            setMenuCategories={setMenuCategories} />
         }
 
 
@@ -161,7 +161,7 @@ const NavbarExplore = () => {
                         <>
                         {item.address ?
                         <Link to={`/market/${item.address}`} className='w-full h-full' key={index}>
-                            <li className='ml-2 text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300'>
+                            <li className='ml-2 text-sm cursor-pointer text-gray-800 hover:text-black transition-colors duration-300 text-center'>
                                 {item.itemList}
                             </li>
                         </Link>

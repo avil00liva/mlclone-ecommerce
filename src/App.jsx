@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import ExploreHome from "./components/ExploreHome"
 import SingleProduct from "./components/SingleProduct"
@@ -10,6 +9,7 @@ import Footer from "./components/Footer"
 import { usePosts } from './context/PostsContext'
 import Historial from './components/Historial'
 import Supermarket from './components/Supermarket'
+import NotFound from "./components/NotFound"
 
 
 function App() {
@@ -27,6 +27,9 @@ function App() {
           <Route path='/market/categoria/:categorie' element={<MarketCategories />} />
           <Route path='/market/historial' element={<Historial />} />
           <Route path='/market/supermercado' element={<Supermarket />} />
+          <Route path='/market/moda' element={<NotFound />} />
+          <Route path='/market/vender' element={<NotFound />} />
+          <Route path='/market/ayuda' element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

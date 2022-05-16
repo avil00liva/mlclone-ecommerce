@@ -40,11 +40,11 @@ const Historial = () => {
     useEffect(()=>{
         const productFilter = JSON.parse(localStorage.getItem("Historial") || "[]");
         setHistorial(productFilter)
-    },[])
+      },[])
 
   return (
     <>
-        <div className='w-full min-h-screen bg-gray-100 text-black p-4 px-4 tablet:px-8 laptop:px-16'>
+        <div className='w-full min-h-screen bg-gray-100 text-black p-4 px-6 tablet:px-8 laptop:px-16'>
             <div className='w-full min-h-[20px] bg-inherit flex justify-start pb-4'>
               <strong className='text-sm tablet:text-xs inline-block w-fit'>Búsquedas relacionadas:</strong>
               <ul className='w-fit h-full flex flex-wrap'>
@@ -92,13 +92,13 @@ const Historial = () => {
 
                   {historial && historial.map((item, index)=>{
                     return (
-                      <div className='w-full min-h-[200px] laptop:max-h-[200px] bg-inherit border-b border-b-gray-400 px-6 py-4 flex flex-col laptop:flex-row items-start justify-start relative mb-4' key={index}>
+                      <div className='w-full min-h-[200px] laptop:max-h-[200px] bg-inherit border-b border-b-gray-400 px-6 py-4 flex flex-col tablet:flex-row items-center tablet:items-start justify-start relative mb-4' key={index}>
                         <div className='w-[250px] h-[150px] bg-inherit mr-2'>
                           <img src={item.img} alt="Product preview" className='w-full h-full object-contain' />
                         </div>
-                        <div className='w-full h-full bg-inherit flex flex-col justify-start'>
+                        <div className='w-full h-full bg-inherit flex flex-col justify-start items-center tablet:items-start'>
                           <Link to={`/market/${item.id}`}>
-                            <h2 className='text-lg text-gray-500 font-light cursor-pointer overflow-hidden laptop:overflow-visible overflow-ellipsis whitespace-nowrap laptop:whitespace-normal' title={item.name}>{item.name}</h2>
+                            <h2 className='text-lg text-gray-500 font-light cursor-pointer text-center tablet:text-left' title={item.name}>{item.name}</h2>
                           </Link>
                           <p className='text-2xl mb-2'>$ {item.price}</p>
                           <div className='w-full min-h-[20px] flex justify-start items-center'>

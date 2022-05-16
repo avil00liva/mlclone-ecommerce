@@ -57,11 +57,9 @@ const Supermarket = () => {
             banner: "https://http2.mlstatic.com/D_NQ_NP892026-MLA47328343610_092021-B.webp" 
         },
     ]
-    const filterMock = productSupermarket.filter((mock)=> mock.categorie === "supermercado")
-    console.log(filterMock);
+    const filterMock = productSupermarket?.filter((mock)=> mock.categorie === "supermercado")
     const [scrollId, setScrollId]=useState(0)
     const [scrollX, setScrollX]=useState(null)
-    const div = document.getElementById("container")
     const myRef= createRef()
     const scroll = (scrollOffset) => {
         myRef.current.scrollLeft += scrollOffset;
@@ -81,7 +79,7 @@ const Supermarket = () => {
   return (
         <div className='w-full min-h-screen bg-gray-200'>
             <Banner banner={banner}/>
-            <div className='w-full min-h-full bg-inherit pt-4 pb-12 px-16'>
+            <div className='w-full min-h-full bg-inherit pt-4 pb-12 px-4 tablet:px-8 laptop:px-16'>
                 <div className='w-full min-h-[30px] flex items-center mb-4'>
                     <h2 className='text-lg text-gray-600 mr-2'>¡OFERTAS ÚNICAS!</h2>
                     <Link to="/market/ofertas">
@@ -102,11 +100,11 @@ const Supermarket = () => {
                     </div>
                 </section>
             </div>
-            <div className='w-full min-h-[300px] bg-inherit pt-4 pb-12 px-16'>
+            <div className='w-full min-h-[300px] bg-inherit pt-4 pb-12 px-4 tablet:px-8 laptop:px-16'>
                 <h2 className='text-base text-center pb-8 text-gray-600 mr-2'>
                     BUSCÁ POR DEPARTAMENTO
                 </h2>
-                <div className='w-full min-h-[200px] flex flex-wrap items-center justify-between' >
+                <div className='w-full min-h-[200px] flex flex-wrap items-center justify-center laptop:justify-between' >
                     {depa.map((item,index)=>{
                         return (
                             <div className='w-[384px] h-[264px] bg-red-900 rounded-xl cursor-pointer hover:shadow-md transition-shadow duration-200 mr-2 mb-8 overflow-hidden relative' key={index}>

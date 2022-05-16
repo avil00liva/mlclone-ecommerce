@@ -16,8 +16,6 @@ const AskPart = () => {
         setText("")
     }
 
-    console.log(time)
-
   return (
     <>
         <div className='w-full min-h-[50px] p-4 mb-4 bg-inherit'>

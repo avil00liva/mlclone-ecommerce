@@ -38,7 +38,7 @@ const ExploreHome = () => {
   return (
     <div className='w-full min-h-screen bg-gray-200 text-black pb-8'>
         <ExploreHomeBanner />
-        <div className='pt-10 px-4 laptop:px-24 w-full min-h-screen bg-inherit'>
+        <div className='pt-10 px-4 tablet:px-16 laptop:px-24 w-full min-h-screen bg-inherit'>
           <div className='p-6 w-fit mx-auto talet:mx-0 tablet:w-full min-h-[80px] bg-white rounded-md shadow-md tablet:flex items-center justify-between'>
             {barraPromo.map((item, index)=>{
               return (

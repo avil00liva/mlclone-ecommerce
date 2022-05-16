@@ -12,12 +12,6 @@ const SingleProduct = () => {
     const [products, setProducts]=useState(fakeMock)
     const productFilter= products.filter(product=> product.id === paramInt)
 
-    const nombre = {
-        nombre: "Agustin",
-        apellido: "Oliva",
-        id: 514
-    }
-
     useEffect(()=>{
         const hist = localStorage.getItem("Historial")
         const historialParse = JSON.parse(hist || "[]")
