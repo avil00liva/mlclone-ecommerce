@@ -2,6 +2,26 @@ import off1 from "../images/explore/Offs/off-1.jpg"
 import off2 from "../images/explore/Offs/off-2.jpg"
 import off3 from "../images/explore/Offs/off-3.jpg"
 import off4 from "../images/explore/Offs/off-4.jpg"
+import lavarropasInverter2 from "../images/explore/Lavarropas-Automatico-Whirlpool-Wlf80a-Inverter-2.webp"
+import lavarropasInverter3 from "../images/explore/Lavarropas-Automatico-Whirlpool-Wlf80a-Inverter-3.webp"
+import mousepad1 from "../images/explore/Mousepad-Anime-Xl-80x28cm-Cod038-Evangelion.webp"
+import mousepad2 from "../images/explore/mousepad-2-xl-80x28cm.webp"
+import mousepad3 from "../images/explore/mousepad-3-xl.webp"
+import mousepad4 from "../images/explore/mousepad-4-xl.webp"
+import dron1 from "../images/explore/dron-1.webp"
+import dron2 from "../images/explore/dron-2.webp"
+import dron3 from "../images/explore/dron-3.webp"
+import camara1 from "../images/explore/camara-1.webp"
+import camaras1 from "../images/explore/camara-seguridad-1.webp"
+import camaras2 from "../images/explore/camara-seguridad-2.webp"
+import camaras3 from "../images/explore/camara-seguridad-3.webp"
+import calefactor1 from "../images/explore/calefactor-1.webp"
+import bicicleta1 from "../images/explore/bicicleta-1.webp"
+import alimentom1 from "../images/explore/alimento-mascota-1.webp"
+import vino1 from "../images/explore/vino-1.webp"
+import vino2 from "../images/explore/vino-2.webp"
+import panhales1 from "../images/explore/panales-1.webp"
+import coffee1 from "../images/explore/coffee-1.webp"
 
 const fakeMock=[
     {
@@ -49,7 +69,7 @@ const fakeMock=[
         type:"lavarropas",
         general_type:"electrodomésticos",
         full:false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_617582-MLA48818518845_012022-O.webp",
+        img:lavarropasInverter2,
         caracteristicas_value:[
             {
                 caract:"lavasecarropas", 
@@ -86,7 +106,7 @@ const fakeMock=[
         full:false,
         free: false,
         oferta:true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_789586-MLA45011605660_022021-O.webp",
+        img:lavarropasInverter3,
         caracteristicas_value:[
             {
                 caract:"lavasecarropas", 
@@ -619,7 +639,7 @@ const fakeMock=[
         cout:"12x 304",
         free: true,
         full:true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_896209-MLA47383319339_092021-O.webp",
+        img:mousepad1,
         type:"accesorio",
         general_type:"gaming",
         caracteristicas_value:[
@@ -653,7 +673,7 @@ const fakeMock=[
         off:"",
         cout:"12x 410",
         full:false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_616863-MLA48207580205_112021-O.webp",
+        img:mousepad2,
         type:"accesorio",
         general_type:"gaming",
         caracteristicas_value:[
@@ -687,7 +707,7 @@ const fakeMock=[
         off:"",
         cout:"12x 410",
         full:false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_722032-MLA43532299097_092020-O.webp",
+        img:mousepad3,
         type:"accesorio",
         general_type:"gaming",
         caracteristicas_value:[
@@ -723,7 +743,7 @@ const fakeMock=[
         oferta:true,
         full:true,
         free: true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_963544-MLA40721130298_022020-O.webp",
+        img:mousepad4,
         caracteristicas_value:[
             {
                 caract:"marca", 
@@ -759,7 +779,7 @@ const fakeMock=[
         oferta:false,
         full:true,
         free: true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_888397-MLA47979312257_102021-V.webp",
+        img:dron1,
         caracteristicas_value:[
             {
                 caract:"Resolución máxima de la cámara", 
@@ -795,7 +815,7 @@ const fakeMock=[
         oferta:false,
         full:false,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_842574-MLA40353899541_012020-O.webp",
+        img:camara1,
         caracteristicas_value:[
             {
                 caract:"Marca", 
@@ -831,7 +851,7 @@ const fakeMock=[
         oferta:false,
         full:false,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_803358-MLA48686773748_122021-O.webp",
+        img:camaras1,
         caracteristicas_value:[
             {
                 caract:"Tipo de cámara", 
@@ -867,7 +887,7 @@ const fakeMock=[
         oferta:true,
         full:true,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_707195-MLA48859066326_012022-O.webp",
+        img:camaras2,
         caracteristicas_value:[
             {
                 caract:"Tipo de cámara", 
@@ -903,7 +923,7 @@ const fakeMock=[
         oferta:false,
         full:true,
         free: true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_835568-MLA48771299156_012022-O.webp",
+        img:camaras3,
         caracteristicas_value:[
             {
                 caract:"Tipo de cámara", 
@@ -939,7 +959,7 @@ const fakeMock=[
         oferta:false,
         full:false,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_786489-MLA49655085821_042022-O.webp",
+        img:dron2,
         caracteristicas_value:[
             {
                 caract:"Tiempo máximo de vuelo", 
@@ -963,7 +983,7 @@ const fakeMock=[
         oferta:true,
         full:true,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_855963-MLA40373328806_012020-O.webp",
+        img:dron3,
         caracteristicas_value:[
             {
                 caract:"Resolución máxima de la cámara", 
@@ -999,7 +1019,7 @@ const fakeMock=[
         oferta:true,
         full:true,
         free: true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_602706-MLA31485281872_072019-O.webp",
+        img:calefactor1,
         caracteristicas_value:[
             {
                 caract:"Marca", 
@@ -1035,7 +1055,7 @@ const fakeMock=[
         oferta:false,
         full:true,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_684378-MLA45695883384_042021-O.webp",
+        img:bicicleta1,
         caracteristicas_value:[
             {
                 caract:"Marca", 
@@ -1075,7 +1095,7 @@ const fakeMock=[
         oferta:true,
         full:false,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_831071-MLA49900705686_052022-O.webp",
+        img:alimentom1,
         caracteristicas_value:[
             {
                 caract:"Mascota recomendada", 
@@ -1111,7 +1131,7 @@ const fakeMock=[
         oferta:true,
         full:false,
         free: true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_747253-MLA49599236268_042022-O.webp",
+        img:vino1,
         caracteristicas_value:[
             {
                 caract:"Bodega", 
@@ -1151,7 +1171,7 @@ const fakeMock=[
         oferta:false,
         full:true,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_775661-MLA43776889595_102020-O.webp",
+        img:panhales1,
         caracteristicas_value:[
             {
                 caract:"Marca", 
@@ -1183,7 +1203,7 @@ const fakeMock=[
         oferta:false,
         full:false,
         free: false,
-        img:"https://http2.mlstatic.com/D_NQ_NP_606485-MLA47186185871_082021-O.webp",
+        img:coffee1,
         caracteristicas_value:[
             {
                 caract:"Marca", 
@@ -1219,7 +1239,7 @@ const fakeMock=[
         oferta:false,
         full:false,
         free: true,
-        img:"https://http2.mlstatic.com/D_NQ_NP_877059-MLA49875759652_052022-O.webp",
+        img:vino2,
         caracteristicas_value:[
             {
                 caract:"Bodega", 

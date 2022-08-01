@@ -2,6 +2,7 @@ import React, {createRef, useState, useEffect} from 'react'
 import fakeMock from '../assets/data/fakeMock'
 import OffsCard from './OffsCard'
 import { Link } from "react-router-dom"
+import PanelExtend from './PanelExtend'
 
 const ExploreOffsPanel = () => {
     const ofertas = fakeMock.filter(mock=> mock.oferta)
@@ -42,6 +43,7 @@ const ExploreOffsPanel = () => {
             {scrollId >= 730 && <button className={`hidden quini:block z-30 w-16 text-blue-500 text-2xl font-medium h-16 bg-white absolute left-0 rounded-full border-b border-b-gray-800 hover:bg-gray-100 transition-colors duration-200 `} onClick={() => scroll(-770)}> - </button>}
             {!scrollX && <button className={`hidden quini:block z-30 w-16 h-16 text-blue-500 text-2xl font-medium bg-white absolute right-0 rounded-full border-b border-b-gray-800 hover:bg-gray-100 transition-colors duration-200 `} onClick={() => scroll(770)}> + </button>}
         </div>
+
     </div>
   )
 }

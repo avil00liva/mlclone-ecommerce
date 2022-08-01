@@ -17,6 +17,21 @@
   .showModalStyle {
     @apply min-h-[60px] min-w-[120px] border border-gray-300 rounded-xl overflow-hidden shadow-sm shadow-gray-400 absolute bg-black text-white top-0 right-6
   }
+  .containerPanel {
+    @apply flex w-screen laptop:w-[90vw]
+  }
+  .panel {
+    @apply h-[80vh] rounded-[50px] text-white cursor-pointer flex-[0.5] m-[10px] relative transition-all duration-700
+  }
+  .panel h3 {
+    @apply text-base absolute bottom-5 left-5 m-0 opacity-0
+  }
+  .panel .active {
+    @apply flex-[5]
+  }
+  .panel.active h3 {
+    @apply opacity-100 transition-opacity
+  }
 }
 
 body {
@@ -207,6 +222,13 @@ body {
 }
 .exploreSw3 {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+@media (max-width: 480px) {
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }
 
 
