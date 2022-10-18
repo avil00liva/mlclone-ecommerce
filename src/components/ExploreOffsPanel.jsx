@@ -27,7 +27,6 @@ const ExploreOffsPanel = () => {
   return (
     <div className='py-12 w-full min-h-[500px] bg-inherit '>
         <div className='w-full min-h-[30px] flex items-center mb-4'>
-            Holaaa esta es una prueba xd
             <h2 className='text-2xl text-gray-600 mr-2'>Ofertas</h2>
             <Link to="/market/ofertas">
                 <span className='text-blue-500 text-sm cursor-pointer'>Ver todas</span>
